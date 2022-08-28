@@ -2,18 +2,23 @@
 
 body{
     font-family: 'Anton', sans-serif;
+    background-color: #394778;
     #app{
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        height: 100vh;
-        background-color: #394778;
+        position: relative;
+        width: 350px;
+        height: 650px;
+        margin: 0 auto;
+        padding: 10px;
 
         form{
-            margin-top: -50px;
             margin-bottom: 50px;
             text-align: center;
+            position: absolute;
+            top: 40px;
 
             h1{
                 margin-bottom: 20px;
@@ -23,7 +28,10 @@ body{
 
             #input-field{
                 width: 230px;
-                padding: 5px;
+                padding: 8px;
+                border: none;
+                border-radius: 5px;
+                background-color: white;
 
                 &:focus{
                     outline: none;
@@ -52,6 +60,8 @@ body{
             display: flex;
             justify-content: center;
             align-items: center;
+            position: absolute;
+            bottom: 10px;
 
             .circle{
                 width: 185px;
